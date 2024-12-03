@@ -8,4 +8,4 @@
 
 ## Output
 
-![output](output.gif =1920x1080)
+<img src="output.gif" width="800" height="600">
