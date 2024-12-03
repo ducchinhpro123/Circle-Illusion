@@ -8,4 +8,4 @@
 
 ## Output
 
-![output](output.gif)
+![output](output.gif =1920x1080)
