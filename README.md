@@ -1,4 +1,4 @@
-# A programming to visualize what I would call: the dots are moving around the circle but not the circle itself but the dots
+> A programming to visualize what I would call: the dots moving along its straight line but not the circle itself but the dots.
 
 ## References
 
