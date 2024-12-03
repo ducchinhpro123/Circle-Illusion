@@ -6,6 +6,8 @@
 
 [Beautiful Trigonometry - Numberphile](https://www.youtube.com/watch?v=snHKEpCv0Hk&t=159s)
 
+[unit circle](unit_circle.png)
+
 ## Output
 
 <img src="output.gif" width="800">
