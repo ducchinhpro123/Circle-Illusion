@@ -1,6 +1,6 @@
 CC = gcc
 
-CFLAGS = -Wall -lm -lraylib
+CFLAGS = -Wall -Wextra -lm -lraylib
 
 clean:
 	rm main
