@@ -8,4 +8,4 @@
 
 ## Output
 
-<img src="output.gif" width="800" height="600">
+<img src="output.gif" width="800">
