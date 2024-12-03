@@ -1,12 +1,11 @@
 #include <raylib.h>
 #include <math.h>
-#include <stdbool.h>
 
 
 #define WINDOW_WIDTH 1000
 #define WINDOW_HEIGHT 1000
-#define DOT_COUNT 10
-#define T 10 // Oscillation period
+#define DOT_COUNT 20
+/* #define T 10 // Oscillation period */
 
 int main()
 {
@@ -17,9 +16,6 @@ int main()
     float circle_radius_y = WINDOW_HEIGHT/2.0f;
     float circle_radius = WINDOW_WIDTH/3.0f;
 
-    /* float moving_circle_radius = 10.0f; */
-    /* float direction = 1; */
-    /* float angle = 0.0f; */
     float amplitude = circle_radius;
     float fre = 0.2f;
     float phase = PI / DOT_COUNT;
@@ -50,22 +46,8 @@ int main()
             /* RLAPI void DrawCircle(int centerX, int centerY, float radius, Color color); */
                 float x = circle_radius_x + amplitude * sin(2*PI*fre*time + i*phase) * cos(i*theta);
                 float y = circle_radius_y + amplitude * sin(2*PI*fre*time + i*phase) * sin(i*theta);
-                DrawCircle(x, y, 10, RED);
+                DrawCircle(x, y, 10, YELLOW);
             }
-
-
-            /* DrawLine(circle_radius_x, circle_radius_y - circle_radius, circle_radius_x, circle_radius_y + circle_radius, RED); */
-            /* DrawLine(circle_radius_x - circle_radius, circle_radius_y, circle_radius_x + circle_radius, circle_radius_x, RED); */
-
-            /* /1* RLAPI void DrawCircle(int centerX, int centerY, float radius, Color color);      // Draw a color-filled circle *1/ */
-            /* DrawCircle(circle_radius_x, moving_circle, moving_circle_radius, YELLOW); */
-            /* DrawCircle(moving_circle_2, circle_radius_y, moving_circle_radius, YELLOW); */
-
-            /* DrawLine(circle_radius_x, moving_circle, moving_circle, circle_radius_y, GREEN); */
-            /* DrawCircle(circle_radius_x + (moving_circle - circle_radius_x)/2.0f, circle_radius_y + (moving_circle - circle_radius_y)/2.0f, 10, YELLOW); */
-            /* DrawCircle(moving_circle, (moving_circle + circle_radius)/2.0f, 10, YELLOW); */
-
-            /* DrawLine(int startPosX, int startPosY, int endPosX, int endPosY, Color color); */
         EndDrawing();
     }
     CloseWindow();
